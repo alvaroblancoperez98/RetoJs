@@ -38,10 +38,14 @@ function validar(){
         alert("error en el telefono");
     }
     
-    if(form.nickname.value !== 0){
-        console.log("nickname correcto");
-    }else {
+    if(form.nickname.value == 0){
         alert("Rellene su nombre de usuario");
+        form.nickname.value="";
+        form.nickname.focus();
+        return false;
+        
+    }else {
+        console.log("nickname correcto");
     }
 
     if(form.fechanac.value !== 0){
@@ -49,4 +53,23 @@ function validar(){
     }else {
         alert("Rellene su fecha de nacimiento");
     }
+
+    if (isValidIBANNumber(form.iban.value) == true) {
+        console.log("iban perfe");
+    } else {
+        alert("casi crack");
+    }
+}
+
+
+function vaciar(){
+    form = document.form;
+    form.nombre.value = "";
+    form.apellidos.value = "";
+    form.correo.value = "";
+    form.dni,value = "";
+    form.iban.value = "";
+    form.telefono.value = "";
+    form.nickname.value = "";
+    form.fechanac.value = "";
 }
