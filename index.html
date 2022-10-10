@@ -9,44 +9,45 @@
 <body>
    <h1>Fortnite Battle Royale</h1>
    <h2>Formulario de inscripción</h2>
-   <form class="nombre">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre">
-    <br>
-    <br>
-    <label for="Apellidos">Apellidos:</label>
-    <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos">
-    <br>
-    <br>
-    <label for="Correo">Correo:</label>
-    <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-    <br>
-    <br>
-    <label for="Telefono">Movil:</label>
-    <input type="number" id="telefono" placeholder="Escribe tu numero de movil" name="telefono">
-    <br>
-    <br>
-    <label for="DNI">Dni:</label>
-    <input type="text" id="dni" placeholder="Escribe tu dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}">
-    <br>
-    <br>
-    <label for="IBAN">IBAN:</label>
-    <input type="number" name="dc1" placeholder="Dígito de Control" title="Dígito de Control" min="2" max="2" required>
-    <input type="number" name="cb" placeholder="Código de Banco" title="Código de Banco" min="4" max="4" required>
-    <input type="number" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta" min="4" max="4" required>
-    <input type="number" name="dc2" placeholder="Dígito de Control" title="Dígito de Control" min="2" max="2" required>
-    <input type="number" name="nc" placeholder="Número de cuenta" title="Número de cuenta" min="10" max="10" required>
-    <br>
-    <br>
-    <label for="nickname">Nombre de usuario:</label>
-    <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname">
-    <br>
-    <br>
-    <label for="FechaNac">Fecha de nacimiento:</label>
-    <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac">
-    <br>
-    <br>
-    <input type="submit" name="enviar" class="benviar">
-</form>
+        <form name="form" action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre">
+            <br>
+            <br>
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos">
+            <br>
+            <br>
+            <label for="Correo">Correo:</label>
+            <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo">
+            <br>
+            <br>
+            <label for="Telefono">Movil:</label>
+            <input type="text" id="telefono" placeholder="Escribe tu numero de movil" name="telefono">
+            <br>
+             <br>
+            <label for="DNI">Dni:</label>
+            <input type="text" id="dni" placeholder="Escribe tu dni" name="dni">
+            <br>
+            <br>
+            <label for="IBAN">IBAN:</label>
+            <input type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control">
+            <input type="number" name="cb" placeholder="Código de Banco" title="Código de Banco">
+            <input type="number" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta">
+            <input type="number" name="dc2" placeholder="Dígito de Control" title="Dígito de Control">
+            <input type="number" name="nc" placeholder="Número de cuenta" title="Número de cuenta">
+            <br>
+            <br>
+            <label for="nickname">Nombre de usuario:</label>
+            <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname">
+            <br>
+            <br>
+            <label for="FechaNac">Fecha de nacimiento:</label>
+            <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac">
+            <br>
+            <br>
+            <button onclick="validar();">Enviar</button>
+        </form>
+    <script src="java.js"></script>
 </body>
 </html>
