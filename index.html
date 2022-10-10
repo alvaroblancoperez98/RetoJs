@@ -33,11 +33,7 @@
             </p>    
             <p>
                 <label for="IBAN">IBAN: </label>
-                <input type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control">
-                <input type="number" name="cb" placeholder="Código de Banco" title="Código de Banco">
-                <input type="number" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta">
-                <input type="number" name="dc2" placeholder="Dígito de Control" title="Dígito de Control">
-                <input type="number" name="nc" placeholder="Número de cuenta" title="Número de cuenta">
+                <input type="text" name="iban" placeholder="IBAN" title="IBAN">
             </p>   
             <p>
                 <label for="nickname">Nickname:</label>
@@ -50,6 +46,9 @@
             <p>
                 <button onclick="validar();">Enviar</button>
             </p> 
+            <p>
+                <button onclick="vaciar();">Reiniciar</button>
+            </p>
         </form>
     <script src="java.js"></script>
 </body>
