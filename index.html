@@ -5,48 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic games</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
    <h1>Fortnite Battle Royale</h1>
    <h2>Formulario de inscripción</h2>
         <form name="form" action="#" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre">
-            <br>
-            <br>
-            <label for="Apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos">
-            <br>
-            <br>
-            <label for="Correo">Correo:</label>
-            <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo">
-            <br>
-            <br>
-            <label for="Telefono">Movil:</label>
-            <input type="text" id="telefono" placeholder="Escribe tu numero de movil" name="telefono">
-            <br>
-             <br>
-            <label for="DNI">Dni:</label>
-            <input type="text" id="dni" placeholder="Escribe tu dni" name="dni">
-            <br>
-            <br>
-            <label for="IBAN">IBAN:</label>
-            <input type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control">
-            <input type="number" name="cb" placeholder="Código de Banco" title="Código de Banco">
-            <input type="number" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta">
-            <input type="number" name="dc2" placeholder="Dígito de Control" title="Dígito de Control">
-            <input type="number" name="nc" placeholder="Número de cuenta" title="Número de cuenta">
-            <br>
-            <br>
-            <label for="nickname">Nombre de usuario:</label>
-            <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname">
-            <br>
-            <br>
-            <label for="FechaNac">Fecha de nacimiento:</label>
-            <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac">
-            <br>
-            <br>
-            <button onclick="validar();">Enviar</button>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre">
+            </p>
+            <p>
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos">
+            </p>
+            <p>
+                <label for="Correo">Correo:</label>
+                <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo">
+            </p>
+            <p>
+                <label for="Telefono">Movil:</label>
+                <input type="text" id="telefono" placeholder="Escribe tu numero de movil" name="telefono">
+            </p>
+            <p>
+                <label for="DNI">Dni:</label>
+                <input type="text" id="dni" placeholder="Escribe tu dni" name="dni">
+            </p>    
+            <p>
+                <label for="IBAN">IBAN: </label>
+                <input type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control">
+                <input type="number" name="cb" placeholder="Código de Banco" title="Código de Banco">
+                <input type="number" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta">
+                <input type="number" name="dc2" placeholder="Dígito de Control" title="Dígito de Control">
+                <input type="number" name="nc" placeholder="Número de cuenta" title="Número de cuenta">
+            </p>   
+            <p>
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname">
+            </p>
+            <p>
+                <label for="FechaNac">Fecha de nacimiento:</label>
+                <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac">
+            </p>   
+            <p>
+                <button onclick="validar();">Enviar</button>
+            </p> 
         </form>
     <script src="java.js"></script>
 </body>
