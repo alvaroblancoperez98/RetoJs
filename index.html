@@ -5,51 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic games</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+     .fondo{
+        background-image: url('./imagenes/fondoepic.jpg');
+        width: auto;
+        height: 100vh;
+        } 
+     </style>
 </head>
 <body>
-   <h1>Fortnite Battle Royale</h1>
+    <div class="fondo">
+    <h1>Fortnite Battle Royale</h1>
    <h2>Formulario de inscripción</h2>
-        <form name="form" action="#" method="POST">
+        <form name="form" id="form" action="#" method="POST">
             <p>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre">
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
             </p>
             <p>
                 <label for="Apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos">
+                <input type="text" id="apellidos" placeholder="Escribe tus Apellidos" name="apellidos" required>
             </p>
             <p>
                 <label for="Correo">Correo:</label>
-                <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo">
+                <input type="email" id="correo" placeholder="Ejemplo@ejemplo.com" name="correo" required>
             </p>
             <p>
                 <label for="Telefono">Movil:</label>
-                <input type="text" id="telefono" placeholder="Escribe tu numero de movil" name="telefono">
+                <input type="text" id="telefono" placeholder="Escribe tu numero de movil" name="telefono" required>
             </p>
             <p>
                 <label for="DNI">Dni:</label>
-                <input type="text" id="dni" placeholder="Escribe tu dni" name="dni">
+                <input type="text" id="dni" placeholder="Escribe tu dni" name="dni" required>
             </p>    
             <p>
                 <label for="IBAN">IBAN: </label>
-                <input type="text" name="iban" placeholder="IBAN" title="IBAN">
+                <input type="text" id="iban" name="iban" placeholder="IBAN" title="IBAN" required>
             </p>   
             <p>
                 <label for="nickname">Nickname:</label>
-                <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname">
+                <input type="text" id="nickname" placeholder="Escribe tu nombre de usuario" name="nickname" required>
             </p>
             <p>
                 <label for="FechaNac">Fecha de nacimiento:</label>
-                <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac">
+                <input type="date" id="fechanac" placeholder="Escribe tu fecha de nacimiento" name="fechanac" required>
             </p>   
             <p>
-                <button onclick="validar();">Enviar</button>
+                <button type="sumbit" onclick="validar();">Enviar</button>
             </p> 
             <p>
                 <button onclick="vaciar();">Reiniciar</button>
             </p>
         </form>
-    <script src="java.js"></script>
+    <script src="javascript/script.js"></script>
+    </div>
 </body>
 </html>
