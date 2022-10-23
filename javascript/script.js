@@ -4,6 +4,7 @@ function validar(){
     var email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var phone_regex =  /^\+?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
     var phone_regex2 =  /^\+?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{2})[-. ]?([0-9]{2})$/;
+    var iban_regex = /([a-zA-Z]{2})\s*\t*(\d{2})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{2})/g;
     //recogemos los datos gracias al DOM
     var nombre = document.getElementById("nombre").value;
     var apellidos = document.getElementById("apellidos").value;
@@ -13,7 +14,7 @@ function validar(){
     var iban = document.getElementById("iban").value;
     var nickname = document.getElementById("nickname").value;
     var fechanac = document.getElementById("fechanac").value;
-
+    var swift = document.getElementById("swift").value;
 
 
     //validación nombre
@@ -53,8 +54,7 @@ function validar(){
     //validación nickname
     if(nickname == 0){
         alert("Rellene su nombre de usuario");
-        return false;
-        
+        return false
     }else {
         console.log("nickname correcto");
     }
@@ -69,15 +69,29 @@ function validar(){
 
 
     //validación IBAN
-    if (!iban.match(/([a-zA-Z]{2})\s*\t*(\d{2})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{2})\s*\t*(\d{10})/g)) {
-        console.log("iban no es valido");
+    if (iban.length == 18){
+        if (!iban.match(iban_regex)) {
+            alert("iban no es valido");
+        } else {
+            console.log("iban perfecto");
+        }
     } else {
-        alert("iban perfecto");
+        console.log(iban.length);
+        alert("iban incorrecto");
     }
+    
     document.getElementById("form").addEventListener("click", function(event){
         event.preventDefault()
         return true;
       });
+
+    //validacion SWIFT
+      if(!swift.match(/[A-Za-z0-9]{8,11}/g)){
+        alert("Error en el codigo swift");
+      } else {
+        console.log("swift perfecto");
+      }
+
 }
 
 //función para vaciar los campos al darle al boton reiniciar.

@@ -9,3 +9,7 @@ form{
     margin: 0 auto;
     width: 300px;
 }
+label{
+    font-weight: bold;
+    color:  black;
+}
